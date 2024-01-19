@@ -11,4 +11,10 @@ var planeFacts = ['The Boeing 707 is an American long-range narrow-body airliner
 'The Boeing 757 is an American narrow-body airliner designed and built by Boeing Commercial Airplanes. \nThe then-named 7N7, a twinjet successor for the trijet 727, received its first orders in August 1978. The \nprototype completed its maiden flight on February 19, 1982, and it was FAA certified on December 21, 1982. Eastern Air Lines placed the initial \n757-200 variant in commercial service on January 1, 1983. A package freighter (PF) variant entered service in September 1987 \nand a combi model in September 1988. The stretched 757-300 was launched in September 1996 and began service in March 1999. \nAfter 1,050 had been built for 54 customers, production ended in October 2004, while Boeing offered the largest 737 NG variants as a successor.',
 'The Boeing 767 is an American wide-body aircraft developed and manufactured by Boeing Commercial Airplanes. \nThe aircraft was launched as the 7X7 program\n on July 14, 1978, the prototype first flew on September 26, 1981, and it was certified on July 30, 1982. The initial 767-200 variant entered service on September 8, 1982,\n with United Airlines, and the extended-range 767-200ER in 1984. It was stretched into the \n767-300 in October 1986, followed by the 767-300ER in 1988, the most popular variant. The 767-300F, a production freighter version, \ndebuted in October 1995. It was stretched again into the 767-400ER from September 2000.', 
 ]
-console.log(planeFacts[Math.floor(Math.random(0, 6))])
+function main(){
+   console.log(planeFacts[Math.floor(Math.random(0, 6))])
+   UserInput = input('Enter to exit, r to restart')
+   if (UserInput.toLowerCase === 'r'){
+    main()
+   }}
+main()
